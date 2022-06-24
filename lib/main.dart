@@ -43,7 +43,11 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => AppBloc(loginApi: LoginApi(), noteApi: NotesApi()),
+      create: (context) => AppBloc(
+        loginApi: LoginApi(),
+        noteApi: NotesApi(),
+        acceptableLoginHandle: const LoginHandle.fooBar(),
+      ),
       child: Scaffold(
         appBar: AppBar(
           title: const Text(homePage),

@@ -9,6 +9,7 @@ class AppBloc extends Bloc<AppAction, AppState> {
   AppBloc({
     required this.loginApi,
     required this.noteApi,
+    required this.acceptableLoginHandle,
   }) : super(const AppState.empty()) {
     on<LoginAction>((event, emit) async {
       //start loading,
@@ -46,7 +47,7 @@ class AppBloc extends Bloc<AppAction, AppState> {
       );
       //get loginhandle
       final loginHandle = state.loginHandle;
-      if (loginHandle != const LoginHandle.fooBar()) {
+      if (loginHandle != acceptableLoginHandle) {
         emit(
           AppState(
             isLoading: true,
@@ -71,4 +72,5 @@ class AppBloc extends Bloc<AppAction, AppState> {
   }
   final LoginApiProtocol loginApi;
   final NotesApiProtocol noteApi;
+  final LoginHandle acceptableLoginHandle;
 }
