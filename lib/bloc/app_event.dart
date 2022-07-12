@@ -58,3 +58,5 @@ class AppEventRegister implements AppEvent {
     required this.password,
   });
 }
+
+//events are simply the users actions on the app 

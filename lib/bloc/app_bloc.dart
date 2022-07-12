@@ -238,3 +238,7 @@ class AppBloc extends Bloc<AppEvent, AppState> {
           .list()
           .then((listResult) => listResult.items);
 }
+
+
+//state are the response of the user's actions 
+//upon every event a new state needs to be emitted
