@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "606110309819",
+    "project_id": "bloc-photo-lib-course",
+    "storage_bucket": "bloc-photo-lib-course.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606110309819:android:5219db07f612149635389e",
+        "android_client_info": {
+          "package_name": "com.example.bloc_tutorial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606110309819-3gnig22har2vsbn4e445i7sgauu4lk2f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjIB1tvxGId37WIXhzuUzABGNL9-8f34Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606110309819-3gnig22har2vsbn4e445i7sgauu4lk2f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
